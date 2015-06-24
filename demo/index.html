@@ -1,0 +1,109 @@
+<!DOCTYPE html5>
+<!--
+overHang.js demo
+Paul Krishnamurthy 2015
+www.PaulKr.com
+-->
+<html>
+	<head>
+		<title>overHang.js Demo</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Paul Krishnamurthy">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link rel="stylesheet" type="text/css" href="style/prism.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="../lib/overHang.min.js"></script>
+		<script type="text/javascript" src="js/prism.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+
+	<body>
+
+
+		<div id='homeText'>
+
+			<h1>OverHang.js</h1>
+			<h2>A jquery plugin that displays sleek, instant notifications, <br />confirmations or prompts inside a given element.</h2>
+
+			<div align="center">
+				<iframe src="https://ghbtns.com/github-btn.html?user=paulkr&repo=The-Third-Element&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+				<iframe src="https://ghbtns.com/github-btn.html?user=paulkr&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px" style="margin-right: 40px;"></iframe>
+				<iframe src="https://ghbtns.com/github-btn.html?user=paulkr&repo=The-Third-Element&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+			</div>
+
+			<button id="1" class="disableSelect demo" style="width: 100px">Try me!</button>
+
+			<br /><br /><br /><br /><br /><br />
+
+			<h3>Usage</h3>
+
+			<img src="images/parameters.png">
+
+			<br /><br />
+
+			<h3>Examples</h3>
+
+			<div align="center">
+				<div align="center">
+
+					<h4>Notifications</h4>
+					<p>To display a notification, the activity needed is "notification".</p>
+
+<pre class="basicUsage"><code class="language-javascript">
+$("body").overHang({
+	// The activity
+	activity : "notification",
+	// Custom message
+	message : "Hello World!",
+	// Custom color or theme
+	col : "alizarin"
+})
+</code></pre>
+
+					<button id="2" class="demo">Over Hang it!</button>
+					<hr />
+
+					<h4>Prompts</h4>
+					<p>To get an input, the activity needed is "prompt".<br />The input is then stored as string in the data of the DOM element ("overHangPrompt"). <br /> [In this case, the 'body']</p>
+
+<pre class="basicUsage" style="width: 290px; display: inline-block"><code class="language-javascript">
+$("body").overHang({
+	// The activity
+	activity : "prompt",
+	// Custom message
+	message : "Enter your name",
+	// Custom color or theme
+	col : "amethyst"
+})
+</code></pre>
+
+					<button id="3" class="demo">Over Hang it!</button>
+					<button id="viewData" class="demo" style="width: 170px; height: 70px; margin-top: 5px;">View Attached Data</button>
+
+					<hr />
+
+					<h4>Confirmations</h4>
+					<p>To get a yes/no confirmation, the activity needed is "confirmation". <br />The confirmation is then stored as a boolean in the data of the DOM element ("overHangConfirm"). <br /> [In this case, the 'body'].</p>
+
+<pre class="basicUsage" style="width: 290px; display: inline-block"><code class="language-javascript">
+$("body").overHang({
+	// The activity
+	activity : "confirmation",
+	// Custom message
+	message : "Are you sure?",
+	// Custom color or theme
+	col : "flower"
+})
+</code></pre>
+
+					<button id="4" class="demo">Over Hang it!</button>
+					<button id="viewConfirm" class="demo" style="width: 170px; height: 70px; margin-top: 5px;">View Answer Chosen</button>
+
+				</div>
+			</div>
+		</div>
+
+		<br /><br /><br />
+		<footer><p>&copy 2015 overHang.js</p></footer>
+	</body>
+</html>

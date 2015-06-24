@@ -1,0 +1,136 @@
+/*
+overHang.js
+Paul Krishnamurthy 2015
+www.PaulKr.com
+*/
+
+@font-face {
+	font-family: Roboto;
+	src: url("http://fonts.googleapis.com/css?family=Roboto");
+}
+
+@font-face {
+	font-family: GeoSans;
+	src: url("../fonts/GeosansLight.ttf");
+}
+
+html, body {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	background-color: #67809F;
+}
+
+h1 {
+	font-family: Roboto;
+	font-size: 100px;
+	color: #F4B350;
+	text-align: center;
+	line-height: 0;
+}
+
+h2 {
+	font-family: GeoSans;
+	font-size: 30px;
+	color: #03073D;
+	text-align: center;
+}
+
+h3 {
+	font-family: GeoSans;
+	font-size: 40px;
+	color: #F4B350;
+	text-align: center;
+	line-height: 0;
+	padding-bottom: 30px;
+}
+
+h4 {
+	font-family: GeoSans;
+	font-size: 30px;
+	color: #03073d;
+	text-align: center;
+	line-height: 0;
+}
+
+p {
+	font-family: Roboto;
+	font-size: 20px;
+	color: #03073D;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+}
+
+hr {
+	width: 600px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 0;
+	height: 3px;
+	background-image: linear-gradient(to right, rgba(3, 7, 61, 0), rgba(0, 0, 0, 0.9), rgba(3, 7, 61, 0));
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	background-color: #03073D;
+	opacity: .4;
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+	font-family: GeoSans;
+	padding-top: 12px;
+}
+
+#homeText {
+	padding-top: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.demo {
+	font-family: GeoSans;
+	font-size: 25px;
+	background-color: #F4B350;
+	color: #03073D;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+	height: 40px;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+
+.demo:hover {
+	-webkit-transition: all 0.4s ease-in-out;
+	background-color: #fff;
+	color: #000;
+}
+
+.basicUsage {
+	width: 270px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.disableSelect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
