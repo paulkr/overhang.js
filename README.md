@@ -1,7 +1,7 @@
 overHang.js
 ===========
 
-`overHang.js` is a JQuery plugin that displays sleek, instant notifications, confirmations or prompts inside a given element.
+`overHang.js` is a JQuery plugin that displays sleek, instant notifications, prompts or confirmations inside a given element.
 
 The Idea
 --------
