@@ -1,7 +1,7 @@
 overHang.js
 ===========
 
-Over Hang is a jquery plugin that displays sleek, instant notifications, confirmations or prompts inside a given element.
+Over Hang is a JQuery plugin that displays sleek, instant notifications, confirmations or prompts inside a given element.
 
 The Idea
 --------
@@ -33,7 +33,7 @@ Features
 
 `overHang.js` takes 3 parameters.
 
-### `activity`
+#### `activity`
 
 The default activity is `"notification"`. Other options are `"prompt"` or `"confirmation"`.
 
@@ -45,7 +45,7 @@ $("object").overHang({
 })
 ```
 
-### `message`
+#### `message`
 
 The `message` parameter takes a string to be displayed. For `prompts`, it acts as a placeholder and for `confirmations` it acts as the yes/no question.
 
@@ -56,7 +56,7 @@ $("object").overHang({
 })
 ```
 
-### `col`
+#### `col`
 
 The `col` parameter takes a color hex code string or theme name from [flatuicolors.com](http://flatuicolors.com) for the background of the overHang banner. Theme names include `"turquoise"`, `"emerald"`, `"river"`, `"amethyst"`, `"asphalt"`, `"flower"`, `"carrot"`, `"alizarin"`, `"clouds"`, `"concrete"`.
 
