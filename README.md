@@ -31,7 +31,7 @@ $("element").overHang();
 Features
 --------
 
-`overHang.js` takes 3 parameters.
+`overHang.js` takes 4 parameters.
 
 #### `activity`
 
@@ -39,9 +39,20 @@ The default activity is `"notification"`. Other options are `"prompt"` or `"conf
 
 ```javascript
 $("object").overHang({
-	activity : "notification",
+	activity : "notification"
 	// activity : "prompt",
 	// activity : "confirmation"
+})
+```
+
+#### `duration`
+
+The default duration is 1.5 seconds.
+
+```javascript
+$("object").overHang({
+	activity : "notification",
+	duration : 2
 })
 ```
 
@@ -52,6 +63,7 @@ The `message` parameter takes a string to be displayed. For `prompts`, it acts a
 ```javascript
 $("object").overHang({
 	activity : "prompt",
+	duration : 2,
 	message : "Enter your name"
 })
 ```
@@ -63,6 +75,7 @@ The `col` parameter takes a color hex code string or theme name from [flatuicolo
 ```javascript
 $("object").overHang({
 	activity : "confirmation",
+	duration : 2,
 	message : "Are you sure?",
 	col : "alizarin"
 })
