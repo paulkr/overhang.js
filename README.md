@@ -84,7 +84,7 @@ $("object").overHang({
 Demo
 ----
 
-[Check it out here!](http://paulkr.github.io/overHang)
+[Check it out here!](http://paulkr.github.io/overHang.js)
 
 
 www.PaulKr.com
