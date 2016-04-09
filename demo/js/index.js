@@ -1,69 +1,92 @@
-// overHang.js
-// Paul Krishnamurthy 2015
-// www.PaulKr.com
+/**
+ * index.js
+ * Paul Krishnamurthy 2016
+ */
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-	// Demo button
-	$("#1").click(function(){
-		$("body").overHang({
-			activity : "notification",
-			message : "This is an overHang.js message!"
-		})
-	})
+  $(".sample").click(function () {
+    $("body").overhang({
+      type : "success"
+    });
+  });
 
-	// Basic usage button
-	$("#2").click(function(){
-		$("body").overHang({
-			activity : "notification",
-			message : "Hello World!",
-			col : "alizarin"
-		})
-	})
+  $(".example--1").click(function () {
+    $("body").overhang({
+      type : "success",
+      message: "Woohoo! Our message works!"
+    });
+  });
 
-	// Prompt
-	$("#3").click(function(){
-		$("body").overHang({
-			activity : "prompt",
-			message : "Enter your name",
-			col : "amethyst"
-		})
-	})
+  $(".example--2").click(function () {
+    $("body").overhang({
+      type: "error",
+      message: "Whoops! Something went wrong!",
+      closeConfirm: true
+    });
+  });
 
-	// Confirmation
-	$("#4").click(function(){
-		$("body").overHang({
-			activity : "confirmation",
-			message : "Are you sure?",
-			col : "flower"
-		})
-	})
+  $(".example--3").click(function () {
+    $("body").overhang({
+      type: "info",
+      message: "You won today's sweepstake!",
+      duration: 5,
+      upper: true
+    });
+  });
 
-	// View attached data
-	$("#viewData").click(function(){
-		$("body").overHang({
-			activity : "notification",
-			message : $("body").data("overHangPrompt"),
-			col : "carrot"
-		})
-	})
+  $(".example--4").click(function () {
+    $("body").overhang({
+      type: "warn",
+      message: "A user has reported you!",
+      duration: 3
+    });
+  });
 
-	// View confirmation
-	$("#viewConfirm").click(function(){
-		var output;
-		if ($("body").data("overHangConfirm")){
-			output = "You picked YES! (true)";
-		} else if ($("body").data("overHangConfirm") == false){
-			output = "Your picked NO! (false)";
-		} else {
-			output = "Nothing Selected."
-		}
-		$("body").overHang({
-			activity : "notification",
-			message : output,
-			col : "river"
-		})
-	})
+  $(".example--5").click(function () {
+    $("body").overhang({
+      type: "prompt",
+      message: "What's your name?"
+    });
+  });
 
-})
+  $(".example--6").click(function () {
+    $("body").overhang({
+      type: "info",
+      message: $("body").data("overhangPrompt") || "You have not entered anything!"
+    });
+  });
 
+  $(".example--7").click(function () {
+    $("body").overhang({
+      type: "confirm",
+      message: "Are you sure?"
+    });
+  })
+
+  $(".example--8").click(function () {
+    var selected = $("body").data("overhangConfirm");
+
+    if (selected === null) {
+      selected = "You have not entered anything!";
+    } else {
+      selected = selected ? "True!" : "False!";
+    }
+
+    $("body").overhang({
+      type: "info",
+      message: selected
+    });
+  });
+
+  $(".example--9").click(function () {
+    $("body").overhang({
+      custom: true,
+      textColor: "#FCE4EC",
+      primary: "#F06292",
+      accent: "#FCE4EC",
+      message: "This is my custom message 😜"
+    });
+  });
+
+});

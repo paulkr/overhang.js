@@ -1,136 +1,141 @@
-/*
-overHang.js
-Paul Krishnamurthy 2015
-www.PaulKr.com
-*/
+/**
+ * index.css
+ * Paul Krishnamurthy 2016
+ */
 
-@font-face {
-	font-family: Roboto;
-	src: url("http://fonts.googleapis.com/css?family=Roboto");
-}
-
-@font-face {
-	font-family: GeoSans;
-	src: url("../fonts/GeosansLight.ttf");
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
 
 html, body {
-	width: 100%;
-	height: auto;
-	margin: 0;
-	background-color: #67809F;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #34495E;
+  font-family: "Roboto", sans-serif;
 }
 
-h1 {
-	font-family: Roboto;
-	font-size: 100px;
-	color: #F4B350;
-	text-align: center;
-	line-height: 0;
+a, a:link, a:active, a:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
-h2 {
-	font-family: GeoSans;
-	font-size: 30px;
-	color: #03073D;
-	text-align: center;
+a:hover {
+  text-decoration: underline;
 }
 
-h3 {
-	font-family: GeoSans;
-	font-size: 40px;
-	color: #F4B350;
-	text-align: center;
-	line-height: 0;
-	padding-bottom: 30px;
+.aligned-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 600px;
 }
 
-h4 {
-	font-family: GeoSans;
-	font-size: 30px;
-	color: #03073d;
-	text-align: center;
-	line-height: 0;
+.pre {
+  font-weight: 400;
+  font-size: 90px;
 }
 
-p {
-	font-family: Roboto;
-	font-size: 20px;
-	color: #03073D;
+.title {
+  color: #F4B350;
+  font-size: 50px;
+  margin-top: 100px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 5px;
+.descrip {
+  font-size: 22px;
+  color: #ecf0f1;
+  font-weight: 300;
 }
 
-hr {
-	width: 600px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	border: 0;
-	height: 3px;
-	background-image: linear-gradient(to right, rgba(3, 7, 61, 0), rgba(0, 0, 0, 0.9), rgba(3, 7, 61, 0));
+.try-button {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
-footer {
-	width: 100%;
-	height: 50px;
-	background-color: #03073D;
-	opacity: .4;
+.sample {
+  width: 120px;
+  height: 50px;
+  background-color: #ECF0F1;
+  color: #34495E;
+  margin-top: 30px;
+  margin: 30px 0 80px 0;
+  font-size: 20px;
+}
+
+.code-example, .code-info {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.example--left .code-info {
+  margin-right: 15px;
+}
+
+.example--left .code-info .type {
+  font-size: 20px;
+  color: #F4B350;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.example--left .code-info button {
+  background-color: #D6D6D6;
+  color: #34495E;
+  float: right;
+}
+
+.example--right .code-info {
+  margin-left: 15px;
+}
+
+.example--right .code-info .type {
+  font-size: 20px;
+  color: #F4B350;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.example--right .code-info button {
+  background-color: #D6D6D6;
+  color: #34495E;
+  float: left;
+}
+
+.code-example {
+  margin-bottom: 80px;
 }
 
 footer p {
-	text-align: center;
-	color: #fff;
-	font-family: GeoSans;
-	padding-top: 12px;
+  text-align: center;
+  color: #F4B350;
+  padding: 10px 0 15px 0;
+  width: 100%;
 }
 
-#homeText {
-	padding-top: 200px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.demo {
-	font-family: GeoSans;
-	font-size: 25px;
-	background-color: #F4B350;
-	color: #03073D;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-	outline: none;
-	border: none;
-	border-radius: 5px;
-	width: 150px;
-	height: 40px;
-	-webkit-transition: all 0.4s ease-in-out;
-}
-
-.demo:hover {
-	-webkit-transition: all 0.4s ease-in-out;
-	background-color: #fff;
-	color: #000;
-}
-
-.basicUsage {
-	width: 270px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.disableSelect {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+@media (max-width: 637px) {
+	.pre {
+		font-size: 60px;
+	}
+	#Github iframe {
+		display: none;
+	}
+	#GithubBanner {
+		z-index: 1 !important;
+	}
+	#Examples {
+		display: none;
+	}
+	footer p {
+		position: absolute;
+		bottom: 0;
+	}
 }

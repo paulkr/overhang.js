@@ -1,0 +1,71 @@
+/**
+ * overhang.css
+ * Paul Krishnamurthy 2016
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.overhang {
+  position    : fixed;
+  display     : none;
+  width       : 100%;
+  z-index     : 9999;
+  padding     : 15px 2px;
+  top         : 0;
+  font-family : "Roboto", sans-serif;
+  text-align  : center;
+}
+
+.overhang .message {
+  color     : #FFF;
+  font-size : 20px;
+}
+
+.overhang .prompt-field {
+  height        : 30px;
+  width         : 250px;
+  border-radius : 5px;
+  border        : none;
+  display       : block;
+  margin-left   : auto;
+  margin-right  : auto;
+  margin-top    : 15px;
+  bottom        : 7px;
+  position      : relative;
+  padding-left  : 3px;
+  padding-right : 3px;
+  outline       : none;
+  font-family   : "Roboto", sans-serif;
+  font-size     : 15px;
+}
+
+.overhang .yes-option, .overhang .no-option {
+  width         : 50px;
+  height        : 30px;
+  border        : none;
+  outline       : none;
+  border-radius : 4px;
+  font-size     : 20px;
+  color         : #FFF;
+  cursor        : pointer;
+  margin        : 0 6px; 
+}
+
+.overhang .yes-option {
+  margin-left : 15px;
+}
+
+.overhang .close {
+  vertical-align : middle;
+  cursor         : pointer;
+  margin-top     : -4px;
+  padding-left   : 13px;
+  font-size      : 2.5em;
+  font-weight    : bold;
+  display        : inline-block;
+  line-height    : 30px;
+}
+
+.overhang .close:after {
+  content : "×";
+}
