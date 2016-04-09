@@ -1,7 +1,7 @@
 overhang.js
 ===========
 
-overhang.js is a JQuery plugin to display sleek, instant notifications, confirmations or prompts inside a given element.
+`overhang.js` is a JQuery plugin to display sleek, instant notifications, confirmations or prompts inside a given element.
 
 [See it in action!](http://paulkr.github.io/overHang.js)
 
@@ -30,7 +30,7 @@ Configuration Parameters
 
 ### Defaults
 
-#### `type`
+##### `type`
 
 This is the type of the notification that you want to display.
 The preset types are `success`, `error`, `warn`, `info`.
@@ -51,31 +51,31 @@ $("body").overhang({
 
 If you want to display either a prompt or confirmation alert, set the type to `prompt` or `confirm`, respectively. Prompts and confirmations both have preset themes, but you can customize them by using the `custom` option.
 
-#### `textColor`
+##### `textColor`
 
 The color of the text. The default is set to white.
 
-#### `message`
+##### `message`
 
 The message to be displayed in your alert.
 
-#### `duration`
+##### `duration`
 
 The duration in seconds to show the alert for. The default is `1.5` seconds.
 
-#### `speed`
+##### `speed`
 
 The speed to drop and raise the alert in milliseconds. The default is set to `500`.
 
-#### `closeConfirm`
+##### `closeConfirm`
 
 Set this to true if you would like the user to have to close the alert rather than it disappearing by itself. The default is set to `false`.
 
-#### `upper`
+##### `upper`
 
 Set this to true if you would like your message in all uppercase letters. The default is set to `false`.
 
-#### `easing`
+##### `easing`
 
 JQuery UI easing option for the drop effect. The default is set to `"easeOutBounce"`
 
@@ -90,23 +90,23 @@ $("body").overhang({
 ```
 
 
-### Confirmations
+### `Confirmations`
 
 When using confirmations, there are additional options that you can customize.
 
-#### yesMessage
+##### `yesMessage`
 
 This is the text on the "true" button that would to display. The default is set to `"Yes"`.
 
-#### noMessage
+##### `noMessage`
 
 This is the text on the "false" button that would to display. The default is set to `"No"`.
 
-#### yesColor
+##### `yesColor`
 
 This is the color of the "true" button. The default is set to `"#2ECC71"`.
 
-#### noColor
+##### `noColor`
 
 This is the color of the "false" button. The default is set to `"#E74C3C"`.
 
