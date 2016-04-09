@@ -3,7 +3,7 @@ overhang.js
 
 `overhang.js` is a JQuery plugin to display sleek, instant notifications, confirmations or prompts inside a given element.
 
-[See it in action!](http://paulkr.github.io/overHang.js)
+[See it in action!](http://paulkr.github.io/overhang.js)
 
 Usage
 -----
