@@ -45,7 +45,7 @@ $("body").overhang({
 });
 ```
 
-`primary` - The backgroun color of the alert.
+`primary` - The background color of the alert.
 
 `accent` - The bottom border color.
 
@@ -90,7 +90,7 @@ $("body").overhang({
 ```
 
 
-### `Confirmations`
+### Confirmations
 
 When using confirmations, there are additional options that you can customize.
 
@@ -110,6 +110,7 @@ This is the color of the "true" button. The default is set to `"#2ECC71"`.
 
 This is the color of the "false" button. The default is set to `"#E74C3C"`.
 
+#### Example
 
 ```javascript
 $("body").overhang({
