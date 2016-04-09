@@ -136,6 +136,3 @@ alert($("target-element").data("overhangConfirm"));
 
 If the user has not yet given a response, the default values will be set to `null`.
 
-
-
-
