@@ -26,7 +26,7 @@ Include references to the Javascript and CSS files.
 Configuration Parameters
 ------------------------
 
-`overhang.js` has 3 primary features - notifications, prompts and confirmations. Most of the options are customizable for all features.
+`overhang.js` has 3 primary features - notifications, prompts and confirmations. Most of the options are customizable for all of these features.
 
 ### Defaults
 
@@ -39,9 +39,9 @@ If you would like to use a custom theme, leave this parameter blank and follow t
 
 ```javascript
 $("body").overhang({
-   custom: true,
-   primary: "#34495E",
-   accent: "#F4B350"
+   custom: true, // Set custom to true
+   primary: "#34495E", // Your custom primary color
+   accent: "#F4B350" // Your custom accent color
 });
 ```
 
@@ -79,16 +79,30 @@ Set this to true if you would like your message in all uppercase letters. The de
 
 JQuery UI easing option for the drop effect. The default is set to `"easeOutBounce"`
 
-#### Example
+#### Basic Alert Notification Example
 
 ```javascript
+// Some error notification
 $("body").overhang({
    type: "error",
-   message: "You could not be logged in at this time."
-   closeConfirm: "true" 
+   message: "You could not be logged in at this time.",
+   closeConfirm: "true"
 });
 ```
 
+### Prompts
+
+When using prompts, all you need to do is set the `type` parameter to `"prompt"`.
+
+#### Prompt Example
+
+```javascript
+// Some prompt notification
+$("body").overhang({
+   type: "prompt",
+   message: "What is your name"
+});
+```
 
 ### Confirmations
 
@@ -110,9 +124,10 @@ This is the color of the "true" button. The default is set to `"#2ECC71"`.
 
 This is the color of the "false" button. The default is set to `"#E74C3C"`.
 
-#### Example
+#### Confirmation Example
 
 ```javascript
+// Some confirmation
 $("body").overhang({
    type: "confirm",
    yesMessage: "Yes please!",
