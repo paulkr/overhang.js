@@ -12,6 +12,8 @@
   z-index     : 9999;
   padding     : 15px 2px;
   top         : 0;
+  left        : 0;
+  right       : 0; 
   font-family : "Roboto", sans-serif;
   text-align  : center;
 }
