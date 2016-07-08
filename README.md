@@ -33,7 +33,7 @@ Configuration Parameters
 ##### `type`
 
 This is the type of the notification that you want to display.
-The preset types are `success`, `error`, `warn`, `info`.
+The preset types are `success`, `error`, `warn`, `info`, `prompt` and `confirm`.
 
 If you would like to use a custom theme, leave this parameter blank and follow the rules for setting a custom theme.
 
