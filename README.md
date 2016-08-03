@@ -159,7 +159,7 @@ The option callback argument is a function that will run once the user has made 
 
 - The submission of a prompt
 - The selection on a confirmation
-- The close button on a `closeConfirm` normal notification
+- The close button on a normal notification with a true `closeConfirm`
 - The raise of a normal notification
 
 Note: For confirmations or prompts, the callback will not run when the close button is clicked and nothing is selected.
@@ -175,5 +175,6 @@ $("body").overhang({
 		var selection = $("body").data("overhangConfirm");
 		alert("You made your selection of " + selection);
 	}
+});
 ```
 
