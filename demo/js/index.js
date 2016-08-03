@@ -89,4 +89,19 @@ $(document).ready(function () {
     });
   });
 
+  $(".example--10").click(function () {
+  	$("body").overhang({
+  		type: "confirm",
+  		primary: "#40D47E",
+  		accent: "#27AE60",
+  		yesColor: "##3498DB",
+  		message: "Do you want to continue?",
+  		callback: function () {
+  			var selection = $("body").data("overhangConfirm");
+        var response = selection ? "yes" : "no";
+        alert("You made your selection of " + response);
+  		}
+  	});
+  });
+
 });

@@ -152,3 +152,28 @@ alert($("target-element").data("overhangConfirm"));
 
 If the user has not yet given a response, the default values will be set to `null`.
 
+Callbacks
+---------
+
+The option callback argument is a function that will run once the user has made an action on the overhang notification. The callback will run after any of these cases:
+
+- The submission of a prompt
+- The selection on a confirmation
+- The close button on a `closeConfirm` normal notification
+- The raise of a normal notification
+
+Note: For confirmations or prompts, the callback will not run when the close button is clicked and nothing is selected.
+
+#### Example
+```javascript
+$("body").overhang({
+	type: "confirm",
+	message: "Are you sure?",
+
+  // This code will run once an option is clicked.
+	callback: function () {
+		var selection = $("body").data("overhangConfirm");
+		alert("You made your selection of " + selection);
+	}
+```
+
