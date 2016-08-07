@@ -29,7 +29,7 @@ $(document).ready(function () {
   $(".example--3").click(function () {
     $("body").overhang({
       type: "info",
-      message: "You won today's sweepstake!",
+      message: "This message will close in 5 seconds!",
       duration: 5,
       upper: true
     });
