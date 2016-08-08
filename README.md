@@ -8,7 +8,7 @@ overhang.js
 Installation
 ------------
 
-You can install overhang through using npm:
+You can install overhang through npm:
 
 ```bash
 $ npm install overhang
