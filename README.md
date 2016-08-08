@@ -35,8 +35,8 @@ Include a reference to the latest version of jQuery and jQuery UI.
 Include references to the Javascript and CSS files.
 
 ```html
-<link rel="stylesheet" type="text/css" href="lib/overhang.min.css" />
-<script type="text/javascript" src="lib/overhang.min.js"></script>
+<link rel="stylesheet" type="text/css" href="dist/overhang.min.css" />
+<script type="text/javascript" src="dist/overhang.min.js"></script>
 ```
 
 Configuration Parameters
