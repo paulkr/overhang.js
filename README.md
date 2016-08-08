@@ -5,6 +5,22 @@ overhang.js
 
 [See it in action!](http://paulkr.github.io/overhang.js)
 
+Installation
+------------
+
+You can install overhang through using npm:
+
+```bash
+$ npm install overhang
+```
+or through bower:
+
+```bash
+$ bower install overhang
+```
+
+Alternatively, you can download the files in the `dist/` folder manually.
+
 Usage
 -----
 
