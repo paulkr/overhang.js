@@ -95,6 +95,10 @@ Set this to true if you would like your message in all uppercase letters. The de
 
 JQuery UI easing option for the drop effect. The default is set to `"easeOutBounce"`
 
+##### `html`
+
+This is a boolean if the `message` argument should be interpreted as HTML. The default value is set to `false`.
+
 #### Basic Alert Notification Example
 
 ```javascript
