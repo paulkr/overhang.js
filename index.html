@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="demo/style/index.css" />
     <link rel="stylesheet" type="text/css" href="dist/overhang.min.css" />
     <link rel="stylesheet" type="text/css" href="demo/style/prism.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="dist/overhang.min.js"></script>
+    <script type="text/javascript" src="lib/overhang.js"></script>
     <script type="text/javascript" src="demo/js/prism.js"></script>
     <script type="text/javascript" src="demo/js/index.js"></script>
   </head>
@@ -165,6 +166,36 @@ $("body").overhang({
           </div>
         </div>
 
+        <div class="example--left">
+          <div class="code-info">
+            <p class="type">Using HTML</p>
+            <button class="try-button example--11">Try me</button>
+          </div>
+          <div class="code-example" style="margin-bottom: 30px;">
+<pre style="width: 350px"><code class="language-javascript">
+var snapchatIcon = '&lt;i class="fa fa-snapchat-ghost" style="color: #FFFC00" aria-hidden="true">&lt;/i>';
+var snapchatNote = ' Add <span style="font-size: 20px">"thepaulkr"</span> on snapchat!';
+
+$("body").overhang({
+  type: "confirm",
+  primary: "#333333",
+  accent: "#FFFC00",
+  message: snapchatIcon + snapchatNote,
+  custom: true,
+  html: true,
+  callback: function () {
+    var selection = $("body").data("overhangConfirm");
+    if (selection) {
+      window.open("https://www.snapchat.com/add/thepaulkr", "_blank");
+    } else {
+      alert("Maybe next time then...");
+    }
+  }
+});
+</code></pre>
+          </div>
+        </div>
+        
       </div>
     </div>
 
