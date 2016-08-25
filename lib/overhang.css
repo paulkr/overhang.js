@@ -18,12 +18,12 @@
   text-align  : center;
 }
 
-.overhang .message {
+.overhang-message {
   color     : #FFF;
   font-size : 20px;
 }
 
-.overhang .prompt-field {
+.overhang-prompt-field {
   height        : 30px;
   width         : 250px;
   border-radius : 5px;
@@ -41,7 +41,7 @@
   font-size     : 15px;
 }
 
-.overhang .yes-option, .overhang .no-option {
+.overhang-yes-option, .overhang-no-option {
   min-width     : 50px;
   height        : 30px;
   border        : none;
@@ -53,11 +53,11 @@
   margin        : 0 6px; 
 }
 
-.overhang .yes-option {
+.overhang-yes-option {
   margin-left : 15px;
 }
 
-.overhang .close {
+.overhang-close {
   vertical-align : middle;
   cursor         : pointer;
   margin-top     : -4px;
@@ -68,6 +68,6 @@
   line-height    : 30px;
 }
 
-.overhang .close:after {
+.overhang-close:after {
   content : "×";
 }
