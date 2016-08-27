@@ -69,5 +69,5 @@
 }
 
 .overhang-close:after {
-  content : "×";
+  content : "\00d7";
 }

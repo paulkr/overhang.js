@@ -160,14 +160,23 @@ Retrieving Data
 
 The `prompt` and `confirm` features both allow you to get data from the user. The responses are stored as data in the DOM of the target element that `overhang.js` has been applied to.
 
-To retrieve the data you would use jQuery like this:
+To retrieve the data, you simply pass in a callback function with one parameter:
 
 ```javascript
-// From a prompt
-alert($("target-element").data("overhangPrompt"));
+$("body").overhang({
+   type: "prompt",
+   message: "What is your name",
+   callback: function (value) {
+      alert("You entered " + value);
+   }
+});
+```
 
-// From a confirmation (either true or false)
-alert($("target-element").data("overhangConfirm"));
+or you manually access the data from the DOM:
+
+```javascript
+alert($("target-element").data("overhangPrompt")); // From a prompt
+alert($("target-element").data("overhangConfirm")); // From a confirmation
 ```
 
 If the user has not yet given a response, the default values will be set to `null`.
@@ -191,8 +200,7 @@ $("body").overhang({
 	message: "Are you sure?",
 
   // This code will run once an option is clicked.
-	callback: function () {
-		var selection = $("body").data("overhangConfirm");
+	callback: function (selection) {
 		alert("You made your selection of " + selection);
 	}
 });

@@ -96,9 +96,8 @@ $(document).ready(function () {
       accent: "#27AE60",
       yesColor: "#3498DB",
       message: "Do you want to continue?",
-      callback: function () {
-        var selection = $("body").data("overhangConfirm");
-        var response = selection ? "yes" : "no";
+      callback: function (value) {
+        var response = value ? "yes" : "no";
         alert("You made your selection of " + response);
       }
     });
@@ -115,10 +114,9 @@ $(document).ready(function () {
       message: snapchatIcon + snapchatNote,
       custom: true,
       html: true,
-      callback: function () {
-        var selection = $("body").data("overhangConfirm");
-        if (selection) {
-          window.open("https://www.snapchat.com/add/thepaulkr", "_blank");
+      callback: function (value) {
+        if (value) {
+          window.location.href = "https://www.snapchat.com/add/thepaulkr";
         } else {
           alert("Maybe next time then...");
         }
