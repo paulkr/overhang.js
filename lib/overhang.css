@@ -23,6 +23,10 @@
   font-size : 20px;
 }
 
+.overhang-message strong { font-weight: bold; }
+.overhang-message a { color: inherit; }
+.overhang-message a:hover { text-decoration: none; }
+
 .overhang-prompt-field {
   height        : 30px;
   width         : 250px;
@@ -58,14 +62,14 @@
 }
 
 .overhang-close {
-  vertical-align : middle;
+  vertical-align : bottom;
   cursor         : pointer;
   margin-top     : -4px;
   padding-left   : 13px;
   font-size      : 2.5em;
   font-weight    : bold;
   display        : inline-block;
-  line-height    : 30px;
+  line-height    : 20px;
 }
 
 .overhang-close:after {
