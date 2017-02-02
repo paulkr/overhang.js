@@ -8,9 +8,9 @@
 .overhang {
   position    : fixed;
   display     : none;
-  width       : 100%;
+  /* width       : 100%; */
   z-index     : 9999;
-  padding     : 15px 2px;
+  padding     : 15px 8px /* 2px */;
   top         : 0;
   left        : 0;
   right       : 0; 
@@ -21,6 +21,15 @@
 .overhang-message {
   color     : #FFF;
   font-size : 20px;
+}
+
+@media (max-width: 719px)
+{
+  .overhang-message {
+    font-size : 14px;
+    
+  }
+  
 }
 
 .overhang-prompt-field {
@@ -58,7 +67,7 @@
 }
 
 .overhang-close {
-  vertical-align : middle;
+  vertical-align : bottom;
   cursor         : pointer;
   margin-top     : -4px;
   padding-left   : 13px;
@@ -66,6 +75,16 @@
   font-weight    : bold;
   display        : inline-block;
   line-height    : 30px;
+}
+
+
+@media (max-width: 719px)
+{
+  .overhang-close {
+    font-size      : 2em;
+    line-height    : 14px;
+  }
+  
 }
 
 .overhang-close:after {
