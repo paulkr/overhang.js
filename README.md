@@ -24,8 +24,7 @@ Alternatively, you can download the files in the `dist/` folder manually.
 Usage
 -----
 
-Include a reference to the latest version of jQuery and jQuery UI.
-
+Include a reference to the latest version of jQuery and jQuery UI. — The specific [jQuery UI components](https://jqueryui.com/download) required are: "**effect.js**" *(Effects Core)*
 
 ```html
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
