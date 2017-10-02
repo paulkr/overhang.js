@@ -13,11 +13,6 @@ You can install overhang through npm:
 ```bash
 $ npm install overhang
 ```
-or through bower:
-
-```bash
-$ bower install overhang
-```
 
 Alternatively, you can download the files in the `dist/` folder manually.
 
