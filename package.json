@@ -1,6 +1,6 @@
 {
   "name": "overhang",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A JQuery plugin for notifications, prompts and confirmations.",
   "repository": {
     "type": "git",
