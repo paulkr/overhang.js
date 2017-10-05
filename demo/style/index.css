@@ -10,136 +10,124 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
 
 html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: #34495E;
-  font-family: "Roboto", sans-serif;
+  width            : 100%;
+  height           : 100%;
+  margin           : 0;
+  background-color : #34495E;
+  font-family      : "Roboto", sans-serif;
 }
 
 a, a:link, a:active, a:focus {
-  text-decoration: none;
-  color: inherit;
+  text-decoration : none;
+  color           : inherit;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration : underline;
 }
 
 .aligned-box {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  max-width: 600px;
+  display      : block;
+  margin-left  : auto;
+  margin-right : auto;
+  text-align   : center;
+  max-width    : 600px;
 }
 
-.pre {
-  font-weight: 400;
-  font-size: 90px;
-}
-
-.title {
-  color: #F4B350;
-  font-size: 50px;
-  margin-top: 100px;
-  font-weight: 300;
-  margin-bottom: 10px;
+.logo {
+  margin-top : 100px;
+  width      : 500px;
 }
 
 .descrip {
-  font-size: 22px;
-  color: #ecf0f1;
-  font-weight: 300;
+  font-size   : 22px;
+  color       : #ECF0F1;
+  font-weight : 300;
 }
 
 .try-button {
-  width: 100px;
-  height: 40px;
-  outline: none;
-  border: none;
-  border-radius: 3px;
-  font-size: 17px;
-  cursor: pointer;
-  text-transform: uppercase;
-  margin-bottom: 6px;
+  width          : 100px;
+  height         : 40px;
+  outline        : none;
+  border         : none;
+  border-radius  : 3px;
+  font-size      : 17px;
+  cursor         : pointer;
+  text-transform : uppercase;
+  margin-bottom  : 6px;
 }
 
 .sample {
-  width: 120px;
-  height: 50px;
-  background-color: #ECF0F1;
-  color: #34495E;
-  margin-top: 30px;
-  margin: 30px 0 80px 0;
-  font-size: 20px;
+  width            : 120px;
+  height           : 50px;
+  background-color : #ECF0F1;
+  color            : #34495E;
+  margin-top       : 30px;
+  margin           : 30px 0 80px 0;
+  font-size        : 20px;
 }
 
 .code-example, .code-info {
-  display: inline-block;
-  vertical-align: top;
+  display        : inline-block;
+  vertical-align : top;
 }
 
 .example--left .code-info {
-  margin-right: 15px;
+  margin-right : 15px;
 }
 
 .example--left .code-info .type {
-  font-size: 20px;
-  color: #F4B350;
-  margin-top: 10px;
-  text-align: right;
+  font-size  : 20px;
+  color      : #F4B350;
+  margin-top : 10px;
+  text-align : right;
 }
 
 .example--left .code-info button {
-  background-color: #D6D6D6;
-  color: #34495E;
-  float: right;
+  background-color : #D6D6D6;
+  color            : #34495E;
+  float            : right;
 }
 
 .example--right .code-info {
-  margin-left: 15px;
+  margin-left : 15px;
 }
 
 .example--right .code-info .type {
-  font-size: 20px;
-  color: #F4B350;
-  margin-top: 10px;
-  text-align: left;
+  font-size  : 20px;
+  color      : #F4B350;
+  margin-top : 10px;
+  text-align : left;
 }
 
 .example--right .code-info button {
-  background-color: #D6D6D6;
-  color: #34495E;
-  float: left;
+  background-color : #D6D6D6;
+  color            : #34495E;
+  float            : left;
 }
 
 .code-example {
-  margin-bottom: 80px;
+  margin-bottom : 80px;
 }
 
 footer p {
-  text-align: center;
-  color: #F4B350;
-  padding: 10px 0 15px 0;
-  width: 100%;
+  text-align : center;
+  color      : #F4B350;
+  padding    : 10px 0 15px 0;
+  width      : 100%;
 }
 
 @media (max-width: 637px) {
-	.pre {
-		font-size: 60px;
-	}
-	#Github iframe {
-		display: none;
-	}
-	#GithubBanner {
-		z-index: 1 !important;
-	}
-	#Examples {
-		display: none;
-	}
+	.logo { width: 300px; }
+
+	#Github iframe { display : none; }
+
+	#GithubBanner { z-index : 1 !important; }
+
+	#Examples { display : none; }
+
 	footer p {
-		position: absolute;
-		bottom: 0;
+		position : absolute;
+		bottom   : 0;
 	}
 }

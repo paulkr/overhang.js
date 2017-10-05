@@ -10,3 +10,5 @@ All notable changes to this repository (after v. 1.0.3) will be recorded in this
 - Updated the default theme (fallback if the `type` argument is not supplied)
 	- Default primary color: "#95A5A6"
 	- Default accent color: "#7F8C8D"
+- Allow usage of setting a duration and using the `closeConfirm` option simultaneously
+- Added official overhang.js logo
