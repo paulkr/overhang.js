@@ -1,7 +1,7 @@
 <p align="center">
   <a href="http://paulkr.github.io/overhang.js/">
     <img
-    alt="overhang" src="http://paulkr.github.io/overhang.js/demo/logo.png" width="400">
+    alt="overhang" src="http://paulkr.github.io/overhang.js/logo.png" width="400">
   </a>
 </p>
 
