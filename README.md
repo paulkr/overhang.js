@@ -1,9 +1,17 @@
-overhang.js
-===========
+<p align="center">
+  <a href="http://paulkr.github.io/overhang.js/">
+    <img
+    alt="overhang" src="http://paulkr.github.io/overhang.js/demo/logo.png" width="400">
+  </a>
+</p>
 
-`overhang.js` is a JQuery plugin to display sleek, instant notifications, confirmations or prompts inside a given element.
+<p align="center">
+  A simple jQuery plugin to display sleek, instant notifications, confirmations or prompts inside a given element.
+</p>
 
-[See it in action!](http://paulkr.github.io/overhang.js)
+<p align="center">
+  <a href="http://paulkr.github.io/overhang.js">See it in action!</a>
+</p>
 
 Installation
 ------------

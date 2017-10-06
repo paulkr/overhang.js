@@ -16,9 +16,10 @@
   padding     : 15px 2px;
   top         : 0;
   left        : 0;
-  right       : 0; 
+  right       : 0;
   font-family : "Roboto", sans-serif;
   text-align  : center;
+  box-sizing  : border-box;
 }
 
 .overhang-message {
@@ -57,7 +58,7 @@
   font-size     : 20px;
   color         : #FFF;
   cursor        : pointer;
-  margin        : 0 6px; 
+  margin        : 0 6px;
 }
 
 .overhang-yes-option {
