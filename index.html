@@ -71,7 +71,7 @@ $("body").overhang({
 <pre style="width: 350px"><code class="language-javascript">
 $("body").overhang({
   type: "info",
-  message: "This message will close in 5 seconds!",
+  message: "⏲️ I will close in 5 seconds!",
   duration: 5,
   upper: true
 });
@@ -85,12 +85,13 @@ $("body").overhang({
 $("body").overhang({
   type: "warn",
   message: "A user has reported you!",
-  duration: 3
+  duration: 3,
+  overlay: true
 });
 </code></pre>
           </div>
           <div class="code-info">
-            <p class="type">Warning Message</p>
+            <p class="type">Dim Overlay Screen</p>
             <button class="try-button example--4">Try me</button>
           </div>
         </div>
@@ -105,7 +106,8 @@ $("body").overhang({
 <pre style="width: 290px"><code class="language-javascript">
 $("body").overhang({
   type: "prompt",
-  message: "What's your name?"
+  message: "What's your name?",
+  overlay: true
 });
 </code></pre>
           </div>
@@ -116,7 +118,8 @@ $("body").overhang({
 <pre style="width: 270px"><code class="language-javascript">
 $("body").overhang({
   type: "confirm",
-  message: "Are you sure?"
+  message: "Are you sure?",
+  overlay: true
 });
 </code></pre>
           </div>
@@ -154,9 +157,10 @@ $("body").overhang({
   accent: "#27AE60",
   yesColor: "#3498DB",
   message: "Do you want to continue?",
+  overlay: true,
   callback: function (value) {
-    var response = value ? "yes" : "no";
-    alert("You made your selection of " + response);
+    var response = value ? "Yes" : "No";
+    alert("You made your selection of: " + response);
   }
 });
 </code></pre>
@@ -184,6 +188,8 @@ $("body").overhang({
   message: snapchatIcon + snapchatNote,
   custom: true,
   html: true,
+  overlay: true,
+  overlayColor: "#FFFF00",
   callback: function (value) {
     if (value) {
       window.location.href = "https://www.snapchat.com/add/thepaulkr";

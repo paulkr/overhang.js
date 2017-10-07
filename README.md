@@ -64,9 +64,9 @@ If you would like to use a custom theme, leave this parameter blank and follow t
 
 ```javascript
 $("body").overhang({
-   custom: true, // Set custom to true
-   primary: "#34495E", // Your custom primary color
-   accent: "#F4B350" // Your custom accent color
+  custom: true, // Set custom to true
+  primary: "#34495E", // Your custom primary color
+  accent: "#F4B350" // Your custom accent color
 });
 ```
 
@@ -94,28 +94,42 @@ The speed to drop and raise the alert in milliseconds. The default is set to `50
 
 ##### `closeConfirm`
 
-Set this to true if you would like the user to have to close the alert rather than it disappearing by itself. The default is set to `false`.
+Set this to `true` if you would like the user to have to close the alert rather than it disappearing by itself. The default is set to `false`.
 
 ##### `upper`
 
-Set this to true if you would like your message in all uppercase letters. The default is set to `false`.
+Set this to `true` if you would like your message in all uppercase letters. The default is set to `false`.
 
 ##### `easing`
 
-JQuery UI easing option for the drop effect. The default is set to `"easeOutBounce"`
+jQuery UI easing option for the drop effect. The default is set to `"easeOutBounce"`
 
 ##### `html`
 
 This is a boolean if the `message` argument should be interpreted as HTML. The default value is set to `false`.
+
+##### `overlay`
+
+Set this to `true` if you would like to have an overlay displayed with your alert. The default value is set to `false`. You can also pass in a value to the `overlayColor` argument to specify the color of the overlay. The default is set to black.
+
+```javascript
+$("body").overhang({
+  type: "confirm",
+  message: "Do you want to continue?",
+  closeConfirm: "true",
+  overlay: true,
+  overlayColor: "#1B1B1B"
+});
+```
 
 #### Basic Alert Notification Example
 
 ```javascript
 // Some error notification
 $("body").overhang({
-   type: "error",
-   message: "You could not be logged in at this time.",
-   closeConfirm: "true"
+  type: "error",
+  message: "You could not be logged in at this time.",
+  closeConfirm: "true"
 });
 ```
 
@@ -128,8 +142,8 @@ When using prompts, all you need to do is set the `type` parameter to `"prompt"`
 ```javascript
 // Some prompt notification
 $("body").overhang({
-   type: "prompt",
-   message: "What is your name"
+  type: "prompt",
+  message: "What is your name"
 });
 ```
 
@@ -158,9 +172,9 @@ This is the color of the "false" button. The default is set to `"#E74C3C"`.
 ```javascript
 // Some confirmation
 $("body").overhang({
-   type: "confirm",
-   yesMessage: "Yes please!",
-   noMessage: "No thanks."
+  type: "confirm",
+  yesMessage: "Yes please!",
+  noMessage: "No thanks."
 });
 ```
 
@@ -173,11 +187,11 @@ To retrieve the data, you simply pass in a callback function with one parameter:
 
 ```javascript
 $("body").overhang({
-   type: "prompt",
-   message: "What is your name",
-   callback: function (value) {
-      alert("You entered " + value);
-   }
+  type: "prompt",
+  message: "What is your name",
+  callback: function (value) {
+    alert("You entered " + value);
+  }
 });
 ```
 

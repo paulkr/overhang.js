@@ -6,7 +6,6 @@
  * paul@paulkr.com
  */
 
-
 $(document).ready(function () {
 
   $(".sample").click(function () {
@@ -33,7 +32,7 @@ $(document).ready(function () {
   $(".example--3").click(function () {
     $("body").overhang({
       type: "info",
-      message: "This message will close in 5 seconds!",
+      message: "⏲️ I will close in 5 seconds!",
       duration: 5,
       upper: true
     });
@@ -43,14 +42,16 @@ $(document).ready(function () {
     $("body").overhang({
       type: "warn",
       message: "A user has reported you!",
-      duration: 3
+      duration: 3,
+      overlay: true
     });
   });
 
   $(".example--5").click(function () {
     $("body").overhang({
       type: "prompt",
-      message: "What's your name?"
+      message: "What's your name?",
+      overlay: true
     });
   });
 
@@ -64,7 +65,8 @@ $(document).ready(function () {
   $(".example--7").click(function () {
     $("body").overhang({
       type: "confirm",
-      message: "Are you sure?"
+      message: "Are you sure?",
+      overlay: true
     });
   })
 
@@ -100,9 +102,10 @@ $(document).ready(function () {
       accent: "#27AE60",
       yesColor: "#3498DB",
       message: "Do you want to continue?",
+      overlay: true,
       callback: function (value) {
-        var response = value ? "yes" : "no";
-        alert("You made your selection of " + response);
+        var response = value ? "Yes" : "No";
+        alert("You made your selection of: " + response);
       }
     });
   });
@@ -118,6 +121,8 @@ $(document).ready(function () {
       message: snapchatIcon + snapchatNote,
       custom: true,
       html: true,
+      overlay: true,
+      overlayColor: "#FFFF00",
       callback: function (value) {
         if (value) {
           window.location.href = "https://www.snapchat.com/add/thepaulkr";
