@@ -112,6 +112,18 @@ This is a boolean if the `message` argument should be interpreted as HTML. The d
 
 Set this to `true` if you would like to have an overlay displayed with your alert. The default value is set to `false`. You can also pass in a value to the `overlayColor` argument to specify the color of the overlay. The default is set to black.
 
+##### `multiline`
+
+Set this to `true` if you would like to use a textarea instead and input when using the prompt type
+
+##### `textWidth`
+
+The width of the textarea when using multiline, default value is `250px`
+
+##### `textHeight`
+
+The height of the textarea when using multiline, default value is `30px`
+
 ```javascript
 $("body").overhang({
   type: "confirm",
