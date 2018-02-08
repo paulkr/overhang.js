@@ -114,7 +114,7 @@ Set this to `true` if you would like to have an overlay displayed with your aler
 
 ##### `multiline`
 
-Set this to `true` if you would like to use a textarea instead and input when using the prompt type
+Set this to `true` if you would like to use a textarea instead and input when using the prompt type. Use Ctrl+Enter to break lines.
 
 ##### `textWidth`
 
