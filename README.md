@@ -41,6 +41,12 @@ Include a reference to the latest version of jQuery and jQuery UI. — The speci
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 ```
 
+If you want to use the type of message "offer", you must reference latest version of jQuery cookie plugin (https://github.com/carhartl/jquery-cookie)
+
+```html
+<script type="text/javascript" src="/path/to/jquery.cookie.js"></script>
+```
+
 Include references to the Javascript and CSS files.
 
 ```html
@@ -58,7 +64,7 @@ Configuration Parameters
 ##### `type`
 
 This is the type of the notification that you want to display.
-The preset types are `success`, `error`, `warn`, `info`, `prompt` and `confirm`.
+The preset types are `success`, `error`, `warn`, `info`, `prompt`, `offer` and `confirm`.
 
 If you would like to use a custom theme, leave this parameter blank and follow the rules for setting a custom theme.
 
@@ -111,6 +117,10 @@ This is a boolean if the `message` argument should be interpreted as HTML. The d
 ##### `overlay`
 
 Set this to `true` if you would like to have an overlay displayed with your alert. The default value is set to `false`. You can also pass in a value to the `overlayColor` argument to specify the color of the overlay. The default is set to black.
+
+##### `buttonsClass`
+
+Set here the class or classes you want to add to the buttons in all type of messages.
 
 ```javascript
 $("body").overhang({
@@ -175,6 +185,28 @@ $("body").overhang({
   type: "confirm",
   yesMessage: "Yes please!",
   noMessage: "No thanks."
+});
+```
+
+### Offers
+
+When using offers, all you need to do is set the `type` parameter to `"offer"`.
+
+##### `readedMessage`
+
+This is the text on the "readed" button that would to display. The default is set to `"Do not show it again"`.
+
+##### `readedColor`
+
+This is the color of the "readed" button. The default is set to `"#4E4E4E"`.
+
+#### Offer Example
+
+```javascript
+// Some offer message
+$("body").overhang({
+  type: "offer",
+  message: "Free shipping on all orders"
 });
 ```
 
