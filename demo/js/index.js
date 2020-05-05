@@ -8,6 +8,8 @@
 
 $(document).ready(function () {
 
+  $(".year").text(new Date().getFullYear());
+
   $(".sample").click(function () {
     $("body").overhang({
       type : "success"
@@ -111,21 +113,21 @@ $(document).ready(function () {
   });
 
   $(".example--11").click(function () {
-    var snapchatIcon = '<i class="fa fa-snapchat-ghost" style="color: #FFFC00" aria-hidden="true"></i>';
-    var snapchatNote = ' Add "thepaulkr" on snapchat!';
+    var instagramIcon = '<i class="fa fa-instagram" style="color: #FFFC00" aria-hidden="true"></i>';
+    var instagramNote = ' Add National Geographic on instagram!';
 
     $("body").overhang({
       type: "confirm",
-      primary: "#333333",
-      accent: "#FFFC00",
-      message: snapchatIcon + snapchatNote,
+      primary: "#9b59b6",
+      accent: "#8e44ad",
+      message: instagramIcon + instagramNote,
       custom: true,
       html: true,
       overlay: true,
-      overlayColor: "#FFFF00",
+      overlayColor: "#1abc9c",
       callback: function (value) {
         if (value) {
-          window.location.href = "https://www.snapchat.com/add/thepaulkr";
+          window.location.href = "https://www.instagram.com/natgeo/";
         } else {
           alert("Maybe next time then...");
         }
