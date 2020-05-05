@@ -6,8 +6,6 @@
  * paul@paulkr.com
  */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-
 .overhang {
   position    : fixed;
   display     : none;
@@ -17,7 +15,6 @@
   top         : 0;
   left        : 0;
   right       : 0;
-  font-family : "Roboto", sans-serif;
   text-align  : center;
   box-sizing  : border-box;
 }
