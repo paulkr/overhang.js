@@ -76,6 +76,10 @@ $("body").overhang({
 
 If you want to display either a prompt or confirmation alert, set the type to `prompt` or `confirm`, respectively. Prompts and confirmations both have preset themes, but you can customize them by using the `custom` option.
 
+##### `customClasses`
+
+Any additional CSS classes to add to the overhang element, separated by spaces. Useful for specifying fonts and further customizations. The default is `""`.
+
 ##### `textColor`
 
 The color of the text. The default is set to white.
