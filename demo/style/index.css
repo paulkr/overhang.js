@@ -8,6 +8,7 @@
 
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css2?family=Anton&display=swap);
 
 html, body {
   width            : 100%;
@@ -108,6 +109,14 @@ a:hover {
 
 .code-example {
   margin-bottom : 80px;
+}
+
+.overhang-overrides {
+  background  : #C6FFDD;
+  background  : -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+  background  : linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+  color       : #2d3436;
+  font-family : "Anton", sans-serif;
 }
 
 footer p {

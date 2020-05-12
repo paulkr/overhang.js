@@ -90,10 +90,12 @@ $(document).ready(function () {
   $(".example--9").click(function () {
     $("body").overhang({
       custom: true,
-      textColor: "#FCE4EC",
+      textColor: "#2D3436",
       primary: "#F06292",
-      accent: "#FCE4EC",
-      message: "This is my custom message 😜"
+      accent: "#FF7675",
+      message: "This is my custom message 😜",
+      closeConfirm: true,
+      customClasses: "overhang-overrides"
     });
   });
 

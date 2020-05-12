@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="http://paulkr.github.io/overhang.js">See it in action!</a>
+  <a href="https://paulkr.github.io/overhang.js">See it in action!</a>
 </p>
 
 Installation
@@ -133,7 +133,8 @@ $("body").overhang({
 $("body").overhang({
   type: "error",
   message: "You could not be logged in at this time.",
-  closeConfirm: "true"
+  closeConfirm: "true",
+  customClasses: "class1 class2"
 });
 ```
 
@@ -223,13 +224,13 @@ Note: For confirmations or prompts, the callback will not run when the close but
 #### Example
 ```javascript
 $("body").overhang({
-	type: "confirm",
-	message: "Are you sure?",
+  type: "confirm",
+  message: "Are you sure?",
 
   // This code will run once an option is clicked.
-	callback: function (selection) {
-		alert("You made your selection of " + selection);
-	}
+  callback: function (selection) {
+    alert("You made your selection of " + selection);
+  }
 });
 ```
 
